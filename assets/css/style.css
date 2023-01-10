@@ -186,11 +186,7 @@ header{
 /*Start Discount*/
 
 /*End Discount*/
-/* foooooooooooooooooooter */
-
-/*---------------------
-  Footer
------------------------*/
+/* Start Footer */
 .footer__text{
     background-image: url(../img/footer-bg.png.webp);
     background-size: cover;
@@ -336,7 +332,8 @@ header{
 	border-top: 1px solid #2a2163;
 	margin-top: 20px;
 }
-/**********************************/
+/* End Footer */
+
 
 
 
