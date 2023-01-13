@@ -169,7 +169,248 @@ header{
 
 /*End Header*/
 /*Start REGISTER YOUR DOMAIN*/
+p {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #444444;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px 0;
+}
+h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: #181818;
+}
 
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+section{
+    font-size: 16px;
+    color: #181818;
+    position: relative;
+    transition: .2s;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.register__text .register__form form {
+    position: relative;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.register__text .register__form form input {
+    width: 100%;
+    height: 45px;
+    border: 2px solid #4c57d6;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #111111;
+    padding-left: 20px;
+}
+.register__text .register__form form .change__extension {
+    font-size: 14px;
+    color: #111111;
+    position: absolute;
+    top: 36px;
+    right: -290px;
+    cursor: pointer;
+}
+.register__text .register__form form .change__extension:before {
+    position: absolute;
+    left: -30px;
+    top: 3px;
+    height: 18px;
+    width: 1px;
+    background: #d7d7d7;
+    content: "";
+}
+.register__text .register__form form .change__extension:after {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    content: "3";
+    font-family: "ElegantIcons";
+}
+
+
+
+div {
+    display: block;
+}
+.register__text .register__form form .site-btn {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+
+}
+.register__text .register__result ul li span{
+    color: #111111;
+    font-size: 15px;
+}
+.register__text .register__result ul li {
+    display: flex;
+    list-style: none;
+    color: #4c57d6;
+    font-weight: 700;
+    margin-right: 0px;
+    font-size: 15px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.site-btn {
+    width: 120px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px 30px 12px;
+    background: #4c57d6;
+    border: none;
+    border-radius: 50px;
+    
+}
+button, input {
+    overflow: visible;
+}
+
+
+.register__result ul{
+    display: flex;
+}
+.register__text{
+    padding: 20px;
+
+}
+.register__text .register__result {
+    margin-bottom: 24px;
+}
+
+.register__form input{
+    width: 100%;
+    color: #4c57d6;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.register__text .register__form {
+    margin-bottom: 34px;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+/* Choose the right hosting solution */
+.services__item {
+    background: #ffffff;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 45px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px rgb(18 8 81 / 15%);
+    box-shadow: 0px 0px 10px rgb(18 8 81 / 15%);
+    margin-bottom: 40px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.section-title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+.section-title h3{
+    position:relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #212529;
+}
+.section-title h3:after {
+    position: absolute;
+    top:65px;
+    left: 0;
+    bottom: -30px;
+    right: 0;
+    height: 13px;
+    width: 83px;
+    background-image: url(../assets/img/line.png.webp);
+    content: "";
+    margin: 0 auto;
+}
+
+.services__item span{
+    color: #4c57d6;
+    font-weight: 500;
+    font-size: 1rem;
+    display: inline-block;
+
+}
+
+
+
+@media only screen and (max-width: 479px){
+    .register__text .register__result ul li {
+        margin-bottom: 10px;
+}}
+@media (min-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+    .col-lg-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-lg-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+
+}
+@media only screen and (max-width: 767px){
+    .register__text .register__result ul li{
+        margin-right: 10px;
+    }
+    .section-title h3:after{
+        content: unset;
+    }
+ 
+    
+}
+/***************/
 /*End REGISTER YOUR DOMAIN*/
 /*Start CHOOSE THE RIGHT HOSTING*/
 
