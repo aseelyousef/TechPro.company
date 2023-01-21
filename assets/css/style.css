@@ -599,7 +599,7 @@ h3, h4{
 	color: white;
 	position: relative;
 }
-.work-section-title h3::after{
+.work-section-title h3::after, .services-header h1::after{
 	content: "";
 	background-image: url("../img/line.png");
 	background-repeat: no-repeat;
@@ -691,7 +691,7 @@ a{
 	color: #4c57d6;
 	margin-right: 5px;
 }
-.discount-section a {
+.discount-section a, .courses-details a {
 	padding: 6px 12px;
 	background-color: #4c57d6;
 	color: white;
@@ -846,6 +846,69 @@ a{
 	margin-top: 20px;
 }
 /* End Footer */
+
+/*services page*/
+.services-header h1{
+    font-weight: 600;
+}
+.services-header h1::after{
+	left: -30px;
+	bottom: 5px;
+}
+.service-container{
+    position: relative;
+    padding: 32px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+}
+.service-container::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color:#20247b;
+    border-radius: 10px;
+    z-index: -1;
+    transition: ease all 1s;
+}
+.service-container:hover::before{
+    width: 100%;
+}
+.service-container:hover .service-content h2{
+    color: white !important;
+}
+.service-container:hover .service-content p{
+    color : rgba(255, 255, 255, 0.8);
+}
+.service-container .icon{
+    width: 72px;
+    height: 72px;  
+    background-color: #fc5356;
+    margin-bottom: 22px;
+}
+.service-container .icon i {
+    font-size: 30px;
+    line-height: 72px;
+}
+.service-content h2{
+    color: #20247b;
+    font-weight: 600;
+}
+.service-content p{
+    overflow: auto;
+    padding: 10px;
+    margin: 0;
+}
+
+  
+
+
+
 
 
 

@@ -84,6 +84,13 @@
         font-size: 14px;
     }
     /*End Discount*/
+    /*start services page*/
+    .service-content p{
+        height: 200px;
+    }
+    .service{
+        padding: 0 !important
+    }
 
 }
 
@@ -135,9 +142,17 @@
     .work-item a{
         padding: 14px 30px 12px;
     }
-
-
     /*END HOW TO BUILD YOUR WEBSITE */
+    /*Services page*/
+    .services-header h1{
+        font-size: 20px;
+    }
+    .service{
+        padding: 0 !important
+    }
+    .service-content p{
+        height: 200px;
+    }
 
 }
 
