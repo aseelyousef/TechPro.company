@@ -113,6 +113,8 @@ header{
 -----------------------*/
 .hero-section,.carousel-item{
     background-image: url(../img/hero-1.jpg.webp);
+	background-size: cover;
+	
 }
 .hero_text {
     padding-top: 184px;
@@ -258,14 +260,15 @@ div {
 .register__text .register__result ul li span{
     color: #111111;
     font-size: 15px;
+    padding-left: 3%;
 }
 .register__text .register__result ul li {
     display: flex;
     list-style: none;
     color: #4c57d6;
     font-weight: 700;
-    margin-right: 0px;
-    font-size: 15px;
+    margin-right: 7%;
+    font-size: 16px;
 }
 
 *, ::after, ::before {
@@ -412,10 +415,135 @@ button, input {
 }
 /***************/
 /*End REGISTER YOUR DOMAIN*/
-/*Start CHOOSE THE RIGHT HOSTING*/
 
-/*End CHOOSE THE RIGHT HOSTING */
 /*Start CHOOSE YOUR PLAN*/
+
+.choose-section {
+
+	padding-bottom: 100px ;
+
+	padding-bottom: 60px;
+}
+
+.choose-swipe-btn {
+	border: 1px solid #4c57d6;
+	border-radius: 50px;
+	height: 50px;
+	width: 250px;
+	float: right;
+}
+
+.choose-swipe-btn label {
+	font-size: 15px;
+	color: #444444;
+	font-weight: 600;
+	display: inline-block;
+	padding: 10px 25px 10px;
+	border-radius: 45px;
+	margin-right: -4px;
+	position: relative;
+	top: 2px;
+	left: 2px;
+	
+}
+
+.choose-swipe-btn label.active {
+	background: #4c57d6;
+	color: #ffffff;
+}
+
+.choose-swipe-btn label input {
+	position: absolute;
+}
+
+
+
+.choose-item {
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top: 22px;
+	background: #ffffff;
+	padding-left: 20px;
+	padding-right: 20px;
+	-webkit-box-shadow: 0px 0px 10px rgba(18, 8, 81, 0.1);
+	box-shadow: 0px 0px 10px rgba(18, 8, 81, 0.1);
+	transition: all 0.3s;
+	margin-bottom: 40px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.choose-item:hover {
+	-webkit-box-shadow: 0px 8px 30px rgba(18, 8, 81, 0.2);
+	box-shadow: 0px 8px 30px rgba(18, 8, 81, 0.2);
+}
+
+.choose-item:hover h3 {
+	background: #4c57d6;
+}
+
+.choose-item:hover .primary-btn {
+	background: #4c57d6;
+	color: #ffffff;
+}
+
+.choose-item h4 {
+	color: #111111;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.choose-item h3 {
+	background: #120851;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 25px 0 20px;
+	margin-bottom: 25px;
+	margin-left: -30px;
+	border-radius: 10px;
+	margin-right: -30px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.choose-item h3 span {
+	font-size: 15px;
+	font-weight: 400;
+	font-family: "sans-serif" ;
+}
+
+.choose-item ul {
+	margin-bottom: 25px;
+}
+
+.choose-item ul li {
+	font-size: 13px;
+	color: #444444;
+	line-height: 40px;
+	list-style: none;
+}
+
+.choose-item .primary-btn {
+	color: #111111;
+	background: #f2f2f2;
+	display: block;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	padding: 14px 0 12px;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+}
+
 
 /*End CHOOSE YOUR PLAN*/
 /*start CLIENTS Number*/
@@ -473,7 +601,7 @@ h3, h4{
 }
 .work-section-title h3::after{
 	content: "";
-	background-image: url("../images/line.png");
+	background-image: url("../img/line.png");
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 0px;
