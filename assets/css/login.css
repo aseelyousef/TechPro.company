@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-image: url(../img/bg_img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+    height: auto;
+    margin-top: 25px;
+    width: 450px;
+    background: #dedede;
+    border-radius: 10px;
+
+
+}
+
+.title {
+    padding: 20PX 30PX;
+    font-weight: bold;
+    font-size: 30PX;
+    color: #130F40;
+
+}
+
+.login_form {
+    padding: 20px 40px;
+}
+
+.login_form .font {
+    font-size: 18px;
+    color: #130F40;
+
+}
+
+.login_form button {
+    margin: 10px 0 10px 0;
+    height: 45px;
+    width: 400px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #1A237E;
+    border: none;
+}
+
+.login_form #email_error,
+.login_form #pass_error,#name_error {
+    margin-top: 5px;
+    width: 400px;
+    font-size: 16px;
+    color: #c62828;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
+
+/* Register css   */
+.login_form .form-group .i , #i {
+    color: #c62828 !important;
+    display: none;
+}
+.login_form .form-group i,
+.login_form .form-group #check ,
+.login_form .form-group #checks {
+    color: green;
+    display: none;
+}
+.login_form .form-group #checks {
+    color: green;
+    top: 30px !important;
+    display: none;
+}
+
+
+.form-group {
+    position: relative;
+}
+
+.form-group .inputReg input {
+    display: block;
+    width: 100%;
+
+}
+
+.form-group i,
+.form-group #checks {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+
+}
+
+.email_error,
+.pass_error {
+    margin-top: 5px;
+    width: 400px;
+    font-size: 16px;
+    color: #c62828;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+   display: none /* visibility:hidden*/ ;
+}
+
+.success input{
+    border: 2px solid green;
+    display: none; 
+}
+
+.error input{
+    border: 2px solid red;
+    display: none ;
+
+}
