@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,42 +13,137 @@
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <!-- Font Awsome-->
         <link rel="stylesheet" href="vendor/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
             rel="stylesheet" />
         <!-- Google Font-->
         <link rel="stylesheet" href="vendor/all.min.css">
-    
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap"
             rel="stylesheet">
         <!--End Google Font-->
-        <!-- end bootstrap-->
+        <!-- sweet Alert -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.2/sweetalert2.min.css"
+            integrity="sha512-NvuRGlPf6cHpxQqBGnPe7fPoACpyrjhlSNeXVUY7BZAj1nNhuNpRBq3osC4yr2vswUEuHq2HtCsY2vfLNCndYA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- css link-->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/media.css">
+        <link rel="stylesheet" href="assets/css/admin.css">
+
         <!--End css link-->
-    
     </head>
 </head>
+
 <body>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Password</th>
-            </tr>
-        </thead>
-        <tbody id="data">
-            
-        </tbody>
-    </table>
+    <!-- ################-->
+    <header class="header">
+        <div class="logo">
+          <a href="#">TechPro</a>
+          <div class="search_box">
+            <input type="text" placeholder="Search ...">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
     
-       <!-- JAVASCRIPT -->
-       <script src="assets/js/app.js"></script>
-       <script src="assets/js/app.js"></script>
+        <div class="header-icons">
+            <a href="index.html"> <i class="fa-solid fa-right-to-bracket"> </i></a>
+
+         
+          <div class="account">
+            <img src="assets/img/bg_img.jpg" alt="">
+            <h4>Admin</h4>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+      
+    
+        <div class="main-body">
+          <h2>Dashboard</h2>
+          <div class="promo_card">
+            <h1>Welcome TechPro Company</h1>
+            <span>Lorem ipsum dolor sit amet.</span>
+            <button>Learn More</button>
+          </div>
+    
+        
+        </div>
+    
+      </div>
+
+    <!-- ################-->
+    <div class="add-course ">
+        <div class="container added">
+            <h1>Create course</h1>
+            <form >
+                <div class="mb-3">
+                    <label for="">course name</label>
+                    <input class="inputs form-control" type="text" placeholder="course name" id="courseName">
+                </div>
+                <label for="">course category</label>
+                <input class="inputs form-control" type="text" placeholder="course category" id="courseCategory">
+
+                <label for="">course price</label>
+                <input class="inputs form-control" type="number" placeholder="course price" id="coursePrice">
+
+                <label for="">course description</label>
+                <textarea class="inputs form-control" placeholder="course description"
+                    id="courseDescription"></textarea>
+
+                <label for="">course capacity</label>
+                <input class="inputs form-control" type="number" placeholder="course capacity" id="courseCapacity">
+
+                <input type="submit" value="Add Course" class="btn btn-info mt-3 text-white" id="click" />
+                <button class="btn btn-outline-secondary mt-3 pe-3" type="reset">clear</button>
+            </form>
+        </div>
+<div class="container ">
+<div class="attendance">
+    <div class="attendance-list">
+        <h1>course List</h1>
+        <input type="search" placeholder="search..." id="search" class="form-control my-3">
+
+        <table class="table table table-striped " >
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>name</th>
+                    <th>category</th>
+                    <th>price</th>
+                    <th>description</th>
+                    <th>capacity</th>
+                    <th>update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <button id="deleteBtn" class="btn btn-outline-danger text-center my-3 text-black">delete all</button>
+            <tbody id="data">
+    
+            </tbody>
+        </table>
+    </div>
+</div>
+    
+         
+        </div>
+    </div>
+    <!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <!-- sweet alert2 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.min.js"
+        integrity="sha512-4aFcnPgoxsyUPgn8gNinplVIEoeBizjYPTpmOaUbC3VZQCsRnduAOch9v0Pn30yTeoWq1rIZByAE4/Gg79VPEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/cource.js"></script>
+
+
 </body>
+
 </html>

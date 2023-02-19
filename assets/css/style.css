@@ -391,6 +391,9 @@ input {
 }
 
 /* Choose the right hosting solution */
+.services-section{
+	background: #eeeffb !important;
+}
 .services__item {
 	background: #ffffff;
 	padding-left: 40px;
@@ -1348,7 +1351,7 @@ a {
 	position: relative;
 	padding: 85px 30px 20px 30px;
 	border-radius: 10px;
-	background: #ffffff;
+	background: transparent;
 	webkit-box-shadow: 3px 7px 13px rgba(18, 8, 81, 0.349);
 	box-shadow: 3px 7px 13px rgba(18, 8, 81, 0.637);
 }
