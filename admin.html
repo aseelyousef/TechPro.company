@@ -82,23 +82,23 @@
             <h1>Create course</h1>
             <form >
                 <div class="mb-3">
-                    <label for="">course name</label>
-                    <input class="inputs form-control" type="text" placeholder="course name" id="courseName">
+                    <label for="">course name <span class="text-danger">*</span></label>
+                    <input class="inputs form-control " type="text" placeholder="course name" id="courseName" required>
                 </div>
                 <label for="">course category</label>
-                <input class="inputs form-control" type="text" placeholder="course category" id="courseCategory">
+                <input class="inputs form-control" type="text" placeholder="course category" id="courseCategory" required>
 
                 <label for="">course price</label>
-                <input class="inputs form-control" type="number" placeholder="course price" id="coursePrice">
+                <input class="inputs form-control" type="number" placeholder="course price" id="coursePrice" required>
 
                 <label for="">course description</label>
                 <textarea class="inputs form-control" placeholder="course description"
                     id="courseDescription"></textarea>
 
                 <label for="">course capacity</label>
-                <input class="inputs form-control" type="number" placeholder="course capacity" id="courseCapacity">
+                <input class="inputs form-control" type="number" placeholder="course capacity" id="courseCapacity" required>
 
-                <input type="submit" value="Add Course" class="btn btn-info mt-3 text-white" id="click" />
+                <input type="submit" value="Add Course" class="btn btn-info mt-3 text-white" disabled id="click" />
                 <button class="btn btn-outline-secondary mt-3 pe-3" type="reset">clear</button>
             </form>
         </div>

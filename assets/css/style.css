@@ -59,10 +59,12 @@ header {
 	margin-right: 5px;
 }
 
-/*.logo a img{
+.logo a .img{
     background-blend-mode: multiply;
-   
-}*/
+	height: 60px;
+	width: 212px;
+	
+}
 .nav-link {
 	color: white !important;
 	width: 50%;
