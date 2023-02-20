@@ -273,7 +273,7 @@ coursePrice.onkeyup = function(){
             coursePrice.classList.replace('is-valid','is-invalid')
         }else
         coursePrice.classList.add('is-invalid')
-        document.getElementById('Alert').classList.replace('d-none','d-block')
+        document.getElementById('Alert3').classList.replace('d-none','d-block')
         addbtn.setAttribute('disabled','disabled')
     }
 }
