@@ -204,16 +204,27 @@ function updateCourse(){
 courseName.onkeyup = function(){
     let pattern =/^[A-Z][a-z\s]{2,10}$/
     if(pattern.test(courseName.value)){
-        if(courseName.classList.contains('is-invalid')){
+        if(courseName.classList.contains('is-invalid')
+        && document.getElementById('Alert').classList.contains('d-block') )
+        {
+
             courseName.classList.replace('is-invalid','is-valid')
+            document.getElementById('Alert').classList.replace('d-block','d-none')
         }else
         courseName.classList.add('is-valid')
         addbtn.removeAttribute('disabled')
     } else{
-        if(courseName.classList.contains('is-valid')){
+        if(courseName.classList.contains('is-valid')
+        && document.getElementById('Alert').classList.contains('d-none'))
+
+        {
+            document.getElementById('Alert').classList.replace('d-none','d-block')
+
             courseName.classList.replace('is-valid','is-invalid')
         }else
         courseName.classList.add('is-invalid')
+        document.getElementById('Alert').classList.replace('d-none','d-block')
+
         addbtn.setAttribute('disabled','disabled')
     }
 }
@@ -222,16 +233,22 @@ courseName.onkeyup = function(){
 courseCategory.onkeyup = function(){
     let pattern =/^[A-Z][a-z]{2,20}$/
     if(pattern.test(courseCategory.value)){
-        if(courseCategory.classList.contains('is-invalid')){
+        if(courseCategory.classList.contains('is-invalid')
+        && document.getElementById('Alert2').classList.contains('d-block') )
+        {
             courseCategory.classList.replace('is-invalid','is-valid')
+            document.getElementById('Alert2').classList.replace('d-block','d-none')
         }else
         courseCategory.classList.add('is-valid')
         addbtn.removeAttribute('disabled')
     } else{
-        if(courseCategory.classList.contains('is-valid')){
+        if(courseCategory.classList.contains('is-valid')
+        && document.getElementById('Alert2').classList.contains('d-none'))
+        {
             courseCategory.classList.replace('is-valid','is-invalid')
         }else
         courseCategory.classList.add('is-invalid')
+        document.getElementById('Alert2').classList.replace('d-none','d-block')
         addbtn.setAttribute('disabled','disabled')
     }
 }
@@ -239,16 +256,24 @@ courseCategory.onkeyup = function(){
 coursePrice.onkeyup = function(){
     let pattern =/^[0-9]{3,4}$/
     if(pattern.test(coursePrice.value)){
-        if(coursePrice.classList.contains('is-invalid')){
+        if(coursePrice.classList.contains('is-invalid')
+        && document.getElementById('Alert3').classList.contains('d-block') )
+        {
             coursePrice.classList.replace('is-invalid','is-valid')
+            document.getElementById('Alert3').classList.replace('d-block','d-none')
         }else
         coursePrice.classList.add('is-valid')
         addbtn.removeAttribute('disabled')
     } else{
-        if(coursePrice.classList.contains('is-valid')){
+        if(coursePrice.classList.contains('is-valid')
+        && document.getElementById('Alert3').classList.contains('d-none'))
+
+        {
+            document.getElementById('Alert3').classList.replace('d-none','d-block')
             coursePrice.classList.replace('is-valid','is-invalid')
         }else
         coursePrice.classList.add('is-invalid')
+        document.getElementById('Alert').classList.replace('d-none','d-block')
         addbtn.setAttribute('disabled','disabled')
     }
 }
