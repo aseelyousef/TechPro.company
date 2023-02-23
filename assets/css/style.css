@@ -59,7 +59,7 @@ header {
 	margin-right: 5px;
 }
 
-.logo a .img{
+.logo a .img , .footer__logo a img{
     background-blend-mode: multiply;
 	height: 60px;
 	width: 212px;
